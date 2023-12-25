@@ -25,7 +25,7 @@ app.use("/api/users", usersRoute);
 const connectionParams = {
 };
 
-const db = "mongodb+srv://harshal:LhZQ9d625DsbK0Hf@ocr-cluster.makrxxu.mongodb.net/?retryWrites=true&w=majority";
+const db = "mongodb+srv://aaryagarg:fJ37ZV9T@F!W.2*@idocr.yvcgtev.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(db, connectionParams)
   .then(() => {
     console.log("Successfully Connected to database ");

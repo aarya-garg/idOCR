@@ -31,13 +31,13 @@ export const preprocessedData = (str) => {
     let dobP = /\b\d{1,2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(\.|) \d{4}\b/g;
     let matcheddate = ipstr.match(dobP );
     
-        mapp["dob"] = matcheddate[0];
+        mapp["dob"] = matcheddate[0] ;
         mapp["doi"] = matcheddate[2];
         mapp["doe"] = matcheddate[1];
         
     
 
-    let pattern = /\d \d{4} \d{5} \d{2}/;
+    let pattern = /\d \d{4} \d{5} \d{2} \d{1}/;
     let matchedNumber = str.match(pattern);
 
     mapp['identification'] = matchedNumber[0];

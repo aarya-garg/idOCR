@@ -27,7 +27,7 @@ function App() {
     const formData = new FormData();
     formData.append("file" , file);
     alert("Image is uploading! Please wait for few minutes");
-    axios.post('http://localhost:5000/upload' , formData)
+    axios.post('https://idocrbackend.onrender.com/upload' , formData)
     .then(res => {
       setImage(res.data.image);
       setId(res.data._id);
@@ -37,7 +37,7 @@ function App() {
 
   const responseobj = async () => {
     try {
-      const uri = `http://localhost:5000/api/users/${id}`;
+      const uri = `https://idocrbackend.onrender.com/api/users/${id}`;
       const res = await axios.get(uri);
       console.log("analyse id ->" , id)
       console.log("analyse resonse ->" , res)
@@ -63,7 +63,7 @@ function App() {
         <p className="headingtext">THAI ID OCR</p>
         </div>
       <div className="imgupld">
-          <img src = {'http://localhost:5000/Images/' + image} alt="" className="imgupld"/>
+          <img src = {'https://idocrbackend.onrender.com/Images/' + image} alt="" className="imgupld"/>
       </div>
       
       <div className="inputimageselector">
