@@ -5,9 +5,15 @@ The Project uses Google Vision Service to obtain the text from the Thai ID Cards
 
 This project is a comprehensive solution leveraging the Google Cloud Vision API for extracting text from images of Thai ID cards. The extracted information undergoes a cleaning process using regular expressions and is then stored in a MongoDB database. The user-friendly React frontend empowers users to upload images, process them with the Google Cloud Vision API, and easily view the extracted details.
 
+# Deployed Link
+https://idocr.netlify.app/
+
+
 # Key Features
 OCR Identification: Extracts details from Thai ID cards using Optical Character Recognition (OCR).
+
 Data Management: Cleans and organizes the extracted data before storing it in MongoDB.
+
 Interactive Frontend: Built with React, the frontend enables seamless image uploading and analysis.
 
 ### Installation
